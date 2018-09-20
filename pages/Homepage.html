@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kwestie van houding - Mijn Video's</title>
+        <!-- Include CSS File Here -->
+        <link rel="stylesheet" type="text/css" href="../css/stijltje.css">
+        <link rel="stylesheet" type="text/css" href="../css/Style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link href="https://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <!-- Include JS File Here -->
+        <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="../js/Homepage.js"></script>
+        <link rel="icon" href="../img/favicon.png" type="image/x-icon"/>
+    </head>
+
+    <!--<body onload="getAllMovies()">-->
+    <body onload="checkLoggedIn();">
+        <div id="header">
+            <div class='userText'>
+            </div>
+            <div id="headerText"><h1>Samen in zicht</h1></div>
+             <div id="dropdown">
+             </div>
+        </div>
+        <div class="optionsHome">
+            <div class="optionsPanel">
+            <h4>Welkom bij  &lsquo;Samen in zicht&rsquo;.</h4>
+Door gebruik te maken van &lsquo;Samen in zicht&rsquo; kunt u videobeelden delen met collega&rsquo;s en hierover gericht vragen stellen. Zo krijgt u meer inzicht in de wijze waarop u samenwerkt. Ook kunnen collega&rsquo;s leren van hoe u te werk gaat.<br><br>
+Er zijn twee manieren waarop &lsquo;Samen in zicht&rsquo; gebruikt kan worden:<br><br>- U deelt een videobeeld met collega&rsquo;s en vraagt hen om (gerichte) feedback. Gebruik hiervoor de optie &lsquo;mijn video&rsquo;s&rsquo;<br>- U wordt door een collega gevraagd feedback te geven op een videobeeld. Gebruik hiervoor de optie  &lsquo;meekijken&rsquo;<br><br>
+Het delen van videobeelden is beveiligd. U bepaalt zelf wie de videobeelden kan zien. Dit noemen we uw netwerk. De beheerder van &lsquo;Samen in zicht&rsquo; verleent toegang aan de leden van uw netwerk. <br><br>
+&lsquo;Samen in zicht&rsquo; is ontwikkeld door HAN SOCIAAL in samenwerking met de gemeente Apeldoorn, Doetinchem en Nijmegen. <br><br>
+Heeft u vragen? Neem contact op met Annica Brummel: annica.brummel@han.nl 
+
+            </div>
+            
+        </div>
+
+        <div class="leftButton" onclick="goToMyVideosPage();"><h2>Mijn video&rsquo;s</h2></div>
+        <div class="rightButton" onclick="openMenuPage('SharedVideos.html');"><h2>Meekijken</h2></div>
+
+        <script src="https://vjs.zencdn.net/6.2.8/video.js"></script>
+        <div id="snackbar"></div>
+    </body>
+</html>

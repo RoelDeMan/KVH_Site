@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Administrator</title>
+    <!-- Include CSS  -->
+    <link rel="stylesheet" type="text/css" href="../css/StyleLoginRegister.css">
+    <link rel="stylesheet" type="text/css" href="../css/Style.css">
+    <link rel="stylesheet" type="text/css" href="../css/stijltje.css">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <!-- Include JS File Here -->
+    <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="../js/Administrator.js"></script>
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon"/>
+</head>
+
+<body onload="checkUserRights();">
+<div id="container">
+    <div id="header">
+                <div class='userText'>
+
+            </div>
+        <div id="headerText"><h1 onclick="openMenuPage('Homepage.html');">Samen in zicht</h1></div>
+             <div id="dropdown">
+             </div>
+    </div>
+    <div id="adminContainer">
+        <div id="containerForUsers">
+            <div id="inputField">
+                <div id="field">
+                    <div id="searchBox"><div id="allUsersTitle">Alle gebruikers</div><input type="text" id="searchUsers" placeholder="Zoek naar gebruikers" onkeyup="searchUsers()"></div>
+                    <div id="adminList"><div id="adminName">Naam</div><div id="adminEmail">Email</div><div id="adminEnable">Toegang</div></div>
+                    <div id="allUsers"><div id="noSearchResults"></div></div>
+                </div>
+            </div>
+        </div>
+        <div id="insertValidResult"></div>
+        <div id="spinner"></div>
+    </div>
+</div>
+<div id="snackbar"></div>
+</body>
+</html>

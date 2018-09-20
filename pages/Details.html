@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DetailPagina</title>
+    <!-- Include CSS File Here -->
+    <link rel="stylesheet" type="text/css" href="../css/videoMarkersStyle.css">
+    <link rel="stylesheet" type="text/css" href="../css/Style.css">
+    <link rel="stylesheet" type="text/css" href="../css/stijltje.css">
+    <link href="https://vjs.zencdn.net/4.3/video-js.css" rel="stylesheet">
+    <link href="../videojs-markers-0.7.0/dist/videojs.markers.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <!-- Include JS File Here -->
+    <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="https://vjs.zencdn.net/4.3/video.js"></script>
+    <script src='../videojs-markers-0.7.0/dist/videojs-markers.js'></script>
+    <script type="text/javascript" src="../js/Details.js"></script>
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon"/>
+
+</head>
+<body>
+    <div id="header">
+        <div class='userText'>
+                
+            </div>
+        <div id="headerText"><h1 onclick="openMenuPage('Homepage.html');">Samen in zicht</h1></div>
+             <div id="dropdown">
+             </div>
+    </div>
+    <div id="menu">
+        <div id="myVideosMenu" class="menuItem" onclick="openMenuPage('MyVideos.html')"><h3>Mijn Video's</h3></div>
+        <div id="sharedVideosMenu" class="menuItem" onclick="openMenuPage('SharedVideos.html')"><h3> Meekijken</h3></div>
+    </div>
+
+    <div id="videoContent">
+
+        <div id="videoContainer">
+
+            <div id="videoSection">
+                <div id="videoTitle">
+                </div>
+                <div id="video">
+                </div>
+                <div id="videoNotFound">
+                </div>
+                <div id="videoData">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="markerContainer">
+            <div id="markerSection">
+            	<p class='initialMarker'></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="snackbar"></div>
+</body>
+</html>

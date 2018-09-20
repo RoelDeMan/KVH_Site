@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kwestie van houding - Meekijken</title>
+        <!-- Include CSS File Here -->
+        <link rel="stylesheet" type="text/css" href="../css/Style.css">
+        <link rel="stylesheet" type="text/css" href="../css/stijltje.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link href="https://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
+        <!-- Include JS File Here -->
+        <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="../js/SharedVideos.js"></script>
+        <link rel="icon" href="../img/favicon.png" type="image/x-icon"/>
+    </head>
+
+    <!--<body onload="getAllMovies()">-->
+    <body onload="checkLoggedIn()">
+        <div id="header">
+            <div class='userText'>    
+            </div>
+            <div id="headerText"><h1 onclick="openMenuPage('Homepage.html');">Samen in zicht</h1></div>
+             <div id="dropdown">
+             </div>
+        </div>
+		<div class="options">
+           	<div class="optionsPanel">
+				<h4>Geven van feedback</h4>
+Het doel van het geven van feedback is dat de sociaal werker meer inzicht krijgt in de wijze waarop hij/zij samenwerkt. De sociaal werker kan een open vraag gesteld hebben of &eacute;&eacute;n of meer gerichte kijkvragen. In beide gevallen zijn aandachtspunten bij het geven van feedback:<br><br>
+- Beschrijf zo concreet mogelijk het gedrag van de sociaal werker dat u ziet/waarneemt op de beelden.<br>
+- Beschrijf het effect van het gedrag van de sociaal werker op de (samenwerking met) de ander.<br>
+- Geef, in de vorm van een compliment en/of tip, suggestie aan, welk gedrag je (meer) van de sociaal werker zou willen zien. 
+
+            </div>
+        </div>
+        <div id="menu">
+            <div id="myVideosMenu" class="menuItem" onclick="openMenuPage('MyVideos.html')"><h3>Mijn Video's</h3></div>
+            <div id="sharedVideosMenu" class="menuItem" onclick="openMenuPage('SharedVideos.html')"><h3> Meekijken</h3></div>
+        </div>
+        <div id="mainDiv"></div>
+        <script src="https://vjs.zencdn.net/6.2.8/video.js"></script>
+    </body>
+</html>

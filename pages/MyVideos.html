@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kwestie van houding - Mijn Video's</title>
+        <!-- Include CSS File Here -->
+        <link rel="stylesheet" type="text/css" href="../css/stijltje.css">
+        <link rel="stylesheet" type="text/css" href="../css/Style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link href="https://vjs.zencdn.net/6.2.8/video-js.css" rel="stylesheet">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <!-- Include JS File Here -->
+        <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="../js/MyVideos.js"></script>
+        <link rel="icon" href="../img/favicon.png" type="image/x-icon"/>
+    </head>
+
+    <!--<body onload="getAllMovies()">-->
+    <body onload="checkLoggedIn();">
+        <div id="header">
+            <div class='userText'>
+                
+            </div>
+            <div id="headerText"><h1 onclick="openMenuPage('Homepage.html');">Samen in zicht</h1></div>
+<!--             <div id="dropdown" onclick="userInfo()">
+                <span>
+                        <svg class="profileImg" xmlns="https://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                            <title>Asset 32</title>
+                                <g id="Layer_2" data-name="Layer 2">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <path class="profileImg" d="M20,10.25a4.88,4.88,0,1,1-4.87,4.88A4.88,4.88,0,0,1,20,10.25m0,12.19c5.38,0,9.75,2.18,9.75,4.87v2.44H10.25V27.31C10.25,24.62,14.62,22.44,20,22.44Z"/>
+                                    </g>
+                                </g>
+                        </svg>
+                    </span>
+                <div id="dropdown-content"></div>
+            </div> -->
+             <div id="dropdown">
+             </div>
+        </div>
+        <div id="menu">
+            <div id="myVideosMenu" class="menuItem" onclick="openMenuPage('MyVideos.html')"><h3>Mijn Video's</h3></div>
+            <div id="sharedVideosMenu" class="menuItem" onclick="openMenuPage('SharedVideos.html')"><h3 class="sharedMenu"> Meekijken</h3><div class="sharedCount"></div></div>
+        </div>
+        <div class="options">
+            <div class="optionsPanel">
+                <div class="actions">
+                    <div class="upload" onclick="openUploadForm()">Uploaden</div>
+                    <div class="share" onclick="openShareForm()">Netwerk</div>
+                </div>
+                <div id="optionsDrawer"></div>
+            </div>
+            <div id='closeDrawer' onclick="closeDrawer()"><p>Sluiten</p></div>
+        </div>
+        </div>
+        <div id="mainDivMyVideos"></div>
+
+
+        <script src="https://vjs.zencdn.net/6.2.8/video.js"></script>
+        <div id="snackbar"></div>
+    </body>
+</html>

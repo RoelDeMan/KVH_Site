@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kwestie van houding - Registreren</title>
+        <!-- Include CSS File Here -->
+        <link rel="stylesheet" type="text/css" href="../css/StyleLoginRegister.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <!-- Include JS File Here -->
+        <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script type="text/javascript" src="../js/Register.js"></script>
+        <link rel="icon" href="../img/favicon.png" type="image/x-icon"/>
+    </head>
+
+    <body onload="focusOnloadKeydown(event);">
+        <div id="container">
+            <div id="header">
+                <h1>Registreren</h1>
+            </div>
+                <div id="loginContainer">
+                    <div id="loginInputAndButton">
+                        <div id="inputField">
+                            <div class="inputDiv">
+                                <label class="nameLabel"><h3>Naam</h3></label>
+                                <input type="text" placeholder="Uw naam..." id="userName" name="userName" class="inputBar" required>
+                            </div>
+                                <div class="errorDiv">
+                                    <div class="emptyDiv"></div>
+                                    <div class="inputDivRegisterResult">
+                                        <div id="userNameValidResult"></div>
+                                    </div>
+                                </div>
+                            <div class="inputDiv">
+                                <label class="nameLabel"><h3>Tussenvoegsel</h3></label>
+                                <input type="text" placeholder="Uw tussenvoegsel..." id="userInsertion" name="userInsertion" class="inputBar" required>
+                            </div>
+                                <div class="emptyDiv"></div>
+                                <div class="inputDivRegisterResult">
+                                    <div id="userInsertionValidResult"></div>
+                                </div>
+                            <div class="inputDiv">
+                                <label class="nameLabel"><h3>Achternaam</h3></label>
+                                <input type="text" placeholder="Uw achternaam..." id="userLastName" name="userLastName" class="inputBar" required>
+                            </div>
+                                <div class="emptyDiv"></div>
+                                <div class="inputDivRegisterResult">
+                                    <div id="userLastNameValidResult"></div>
+                                </div>
+                            <div class="inputDiv">
+                                <label class="nameLabel"><h3>Email</h3></label>
+                                <input type="text" placeholder="Uw email..." id="userEmail" name="userEmail" class="inputBar" required>
+                            </div>
+                                <div class="emptyDiv"></div>
+                                <div class="inputDivRegisterResult">
+                                    <div id="userEmailValidResult"></div>
+                                </div>
+                            <div class="inputDiv">
+                                <label class="nameLabel"><h3>Wachtwoord</h3></label>
+                                <input type="password" placeholder="Uw wachtwoord..." id="userPassword" name="userPassword" class="inputBar" required>
+                            </div>
+                                <div class="emptyDiv"></div>
+                                <div class="inputDivRegisterResult">
+                                    <div id="userPasswordValidResult"></div>
+                                </div>
+                            <div class="inputDiv">
+                                <label class="nameLabel"><h3>Wachtwoord-herhalen</h3></label>
+                                <input type="password" placeholder="Uw wachtwoord-herhalen..." id="userPasswordConfirm" name="userPasswordConfirm" class="inputBar" required>
+                            </div>
+                                <div class="emptyDiv"></div>
+                                <div class="inputDivRegisterResult">
+                                    <div id="userPasswordConfirmValidResult"></div>
+                                </div>
+                            <div id="buttonField">
+                                <button type="button" id="registerButton" onmousedown="CheckAllValues(event);">Registreer</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="insertValidResult"></div>
+                    <div id="spinner"></div>
+                </div>
+        </div>
+    </body>
+</html>
